@@ -1,0 +1,13 @@
+services:
+  stable-diff:
+    image: lazer2214/stable-diff
+    container_name: stable-diff
+    ports:
+      - 80:80
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
