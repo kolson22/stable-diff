@@ -6,7 +6,7 @@ USER root
 
 RUN apt-get update
 RUN apt-get upgrade -y
-RUN apt-get install -y wget git python3 python3-venv
+RUN apt-get install -y wget git python3 python3-venv ffmpeg libsm6 libxext6
 RUN wget -O /app/webui.sh https://raw.githubusercontent.com/AUTOMATIC1111/stable-diffusion-webui/master/webui.sh
 
 # Set user and group
